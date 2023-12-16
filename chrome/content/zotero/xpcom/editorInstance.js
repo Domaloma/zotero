@@ -1653,9 +1653,9 @@ class EditorInstanceUtilities {
 			&& itemData.issued['date-parts']
 			&& itemData.issued['date-parts'][0]) {
 			let year = itemData.issued['date-parts'][0][0];
-			if (year && year != '0000') {
-				str += ', ' + year;
-			}
+			// if (year && year != '0000') {
+			// 	str += ', ' + year;
+			// }
 		}
 
 		// Locator
@@ -1671,7 +1671,8 @@ class EditorInstanceUtilities {
 				var label = 'p.';
 			}
 
-			str += ', ' + label + ' ' + citationItem.locator;
+			// str += ', ' + label + ' ' + citationItem.locator;
+			str += ' ' + citationItem.locator;
 		}
 
 		// Prefix
